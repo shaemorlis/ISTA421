@@ -1,0 +1,52 @@
+﻿@model Peoples.Models.People
+
+@{
+    ViewBag.Title = "My Page";
+}
+
+
+<div class="jumbotron">
+    <h1>Peoples Repositery </h1>
+    
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="table-responsive">
+
+            
+            <table class="table">
+
+                <thead>
+                    <tr>
+                        <th>Person Family </th>
+                        <th>Person Name</th>
+                        <th>Person Age </th>
+                        <th>Person email </th>
+                        <th>Person Address </th>
+                        <th>Person State </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var p in Model.persons)
+                    {
+                    <tr>
+                        <td> @p.PersonFamily</td>
+                        <td> @p.PersonName</td>
+                        <td> @p.PersonAge</td>
+
+                        <td> @p.PersonEmail</td>
+                        <td> @p.PersonAddress</td>
+                        <td> @p.PersonState</td>
+                        
+
+                    </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</div>

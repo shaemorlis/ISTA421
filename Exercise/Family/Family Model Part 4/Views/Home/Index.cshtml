@@ -1,0 +1,67 @@
+﻿@model  IEnumerable<Peoples.Models.Person>
+
+@{
+    ViewBag.Title = "My Page";
+}
+
+
+<div class="jumbotron">
+    <h1>Peoples Repositery </h1>
+    
+</div>
+<div>
+    @using (@Html.BeginForm( "Search","Home"))
+    {
+        @Html.TextBox("SearchString") <input type="submit" value="search" />
+    }
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="table-responsive">
+
+            
+            <table class="table">
+
+                <thead>
+                    <tr>
+                        
+                        <th>Person Name</th>
+                        <th>Person Age </th>
+                        <th>Person email </th>
+                        <th>Person Address </th>
+                        <th>Person State </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @if (Model != null)
+                    {
+                        foreach (var p in Model)
+                        {
+                            <tr>
+                                
+                                <td> @p.PersonName</td>
+                                <td> @p.PersonAge</td>
+
+                                <td> @p.PersonEmail</td>
+                                <td> @p.PersonAddress</td>
+                                <td> @p.PersonState</td>
+
+
+                            </tr>
+                        }
+                    }
+            else
+            {
+                <div class="alert alert-danger">
+                    <p> No record Found </p>
+                </div>
+            }
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</div>

@@ -1,0 +1,47 @@
+﻿@model Peoples.Models.MyModel
+
+@{
+    ViewBag.Title = "My Page";
+}
+
+
+<div class="jumbotron">
+    <h1>My Family Model </h1>
+    
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="table-responsive">
+
+
+            <table class="table">
+
+                <thead>
+                    <tr>
+                        <th>My Name </th>
+                        <th>My Father </th>
+                        <th>My Mother </th>
+                        <th>My Wife </th>
+                        <th>My Brother </th>
+                        <th>My Sister </th>
+                        <th>My Best Friend </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> @Model.MyName</td>
+                        <td> @Model.MyFather</td>
+                        <td> @Model.MyMother</td>
+                        <td> @Model.MyWife</td>
+                        <td> @Model.MyBrother1</td>
+                        <td> @Model.MySister</td>
+                        <td> @Model.MyBestFriend</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</div>
