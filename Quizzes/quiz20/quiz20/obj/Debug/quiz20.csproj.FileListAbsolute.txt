@@ -1,0 +1,13 @@
+C:\Users\HP_ENVY\Downloads\quiz20\quiz20\bin\Debug\quiz20.exe.config
+C:\Users\HP_ENVY\Downloads\quiz20\quiz20\bin\Debug\quiz20.exe
+C:\Users\HP_ENVY\Downloads\quiz20\quiz20\bin\Debug\quiz20.pdb
+C:\Users\HP_ENVY\Downloads\quiz20\quiz20\obj\Debug\quiz20.csprojResolveAssemblyReference.cache
+C:\Users\HP_ENVY\Downloads\quiz20\quiz20\obj\Debug\quiz20.exe
+C:\Users\HP_ENVY\Downloads\quiz20\quiz20\obj\Debug\quiz20.pdb
+C:\Users\cmorl\MSSA2021\ISTA421\Quizzes\quiz20\quiz20\bin\Debug\quiz20.exe.config
+C:\Users\cmorl\MSSA2021\ISTA421\Quizzes\quiz20\quiz20\bin\Debug\quiz20.exe
+C:\Users\cmorl\MSSA2021\ISTA421\Quizzes\quiz20\quiz20\bin\Debug\quiz20.pdb
+C:\Users\cmorl\MSSA2021\ISTA421\Quizzes\quiz20\quiz20\obj\Debug\quiz20.csprojAssemblyReference.cache
+C:\Users\cmorl\MSSA2021\ISTA421\Quizzes\quiz20\quiz20\obj\Debug\quiz20.csproj.CoreCompileInputs.cache
+C:\Users\cmorl\MSSA2021\ISTA421\Quizzes\quiz20\quiz20\obj\Debug\quiz20.exe
+C:\Users\cmorl\MSSA2021\ISTA421\Quizzes\quiz20\quiz20\obj\Debug\quiz20.pdb
