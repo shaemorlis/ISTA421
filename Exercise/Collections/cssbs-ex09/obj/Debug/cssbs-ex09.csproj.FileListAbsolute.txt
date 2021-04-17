@@ -1,0 +1,13 @@
+c:\users\hp_envy\documents\visual studio 2015\Projects\cssbs-ex09\cssbs-ex09\bin\Debug\cssbs-ex09.exe.config
+c:\users\hp_envy\documents\visual studio 2015\Projects\cssbs-ex09\cssbs-ex09\bin\Debug\cssbs-ex09.exe
+c:\users\hp_envy\documents\visual studio 2015\Projects\cssbs-ex09\cssbs-ex09\bin\Debug\cssbs-ex09.pdb
+c:\users\hp_envy\documents\visual studio 2015\Projects\cssbs-ex09\cssbs-ex09\obj\Debug\cssbs-ex09.csprojResolveAssemblyReference.cache
+c:\users\hp_envy\documents\visual studio 2015\Projects\cssbs-ex09\cssbs-ex09\obj\Debug\cssbs-ex09.exe
+c:\users\hp_envy\documents\visual studio 2015\Projects\cssbs-ex09\cssbs-ex09\obj\Debug\cssbs-ex09.pdb
+C:\Users\cmorl\MSSA2021\ISTA421\Exercise\cssbs-ex09\cssbs-ex09\bin\Debug\cssbs-ex09.exe.config
+C:\Users\cmorl\MSSA2021\ISTA421\Exercise\cssbs-ex09\cssbs-ex09\bin\Debug\cssbs-ex09.exe
+C:\Users\cmorl\MSSA2021\ISTA421\Exercise\cssbs-ex09\cssbs-ex09\bin\Debug\cssbs-ex09.pdb
+C:\Users\cmorl\MSSA2021\ISTA421\Exercise\cssbs-ex09\cssbs-ex09\obj\Debug\cssbs-ex09.csprojAssemblyReference.cache
+C:\Users\cmorl\MSSA2021\ISTA421\Exercise\cssbs-ex09\cssbs-ex09\obj\Debug\cssbs-ex09.csproj.CoreCompileInputs.cache
+C:\Users\cmorl\MSSA2021\ISTA421\Exercise\cssbs-ex09\cssbs-ex09\obj\Debug\cssbs-ex09.exe
+C:\Users\cmorl\MSSA2021\ISTA421\Exercise\cssbs-ex09\cssbs-ex09\obj\Debug\cssbs-ex09.pdb
