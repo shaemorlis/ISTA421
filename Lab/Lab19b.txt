@@ -1,0 +1,44 @@
+
+using System;
+namespace WillsCardGame
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //1. Create a new pack of cards
+            int[] newPack = new int[52];            
+                for (int i = 0; i < newPack.Length; i++)
+                    //increment through the cards
+                    newPack[i] = i;
+            printPack(newPack);
+            Console.WriteLine("==============");
+
+            //2. Shuffle the pack
+            
+            Random r = new Random();
+            for (int i = 0; i < newPack.Length; i++)
+            {
+                //Pick a random number between 0 and 51                
+                int rn = r.Next(52);
+                //swap i for the random number
+                int temp = newPack[i];
+                newPack[i] = newPack[rn];
+                newPack[rn] = temp;
+            }
+
+            //3. Print the pack
+            printPack(newPack);
+        }
+        private static void printPack(int[] newPack)
+        {
+            //define the suits and values
+            string[] suites = { "Clubs", "Diamonds", "Hearts", "Spades" };
+            string[] values = { "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace" };
+            foreach (int i in newPack)
+            {
+                Console.WriteLine($"{values[i % 13]} of {suites[i / 13]}");
+            }
+        }
+    }
+}
