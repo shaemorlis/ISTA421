@@ -1,0 +1,13 @@
+C:\Users\HP_ENVY\Downloads\NumberConversion\NumberConversion\bin\Debug\NumberConversion.exe.config
+C:\Users\HP_ENVY\Downloads\NumberConversion\NumberConversion\obj\Debug\NumberConversion.csprojResolveAssemblyReference.cache
+C:\Users\HP_ENVY\Downloads\NumberConversion\NumberConversion\bin\Debug\NumberConversion.exe
+C:\Users\HP_ENVY\Downloads\NumberConversion\NumberConversion\bin\Debug\NumberConversion.pdb
+C:\Users\HP_ENVY\Downloads\NumberConversion\NumberConversion\obj\Debug\NumberConversion.exe
+C:\Users\HP_ENVY\Downloads\NumberConversion\NumberConversion\obj\Debug\NumberConversion.pdb
+C:\Users\cmorl\MSSA2021\ISTA421\Exercise\NumberConversion\bin\Debug\NumberConversion.exe.config
+C:\Users\cmorl\MSSA2021\ISTA421\Exercise\NumberConversion\bin\Debug\NumberConversion.exe
+C:\Users\cmorl\MSSA2021\ISTA421\Exercise\NumberConversion\bin\Debug\NumberConversion.pdb
+C:\Users\cmorl\MSSA2021\ISTA421\Exercise\NumberConversion\obj\Debug\NumberConversion.csprojAssemblyReference.cache
+C:\Users\cmorl\MSSA2021\ISTA421\Exercise\NumberConversion\obj\Debug\NumberConversion.csproj.CoreCompileInputs.cache
+C:\Users\cmorl\MSSA2021\ISTA421\Exercise\NumberConversion\obj\Debug\NumberConversion.exe
+C:\Users\cmorl\MSSA2021\ISTA421\Exercise\NumberConversion\obj\Debug\NumberConversion.pdb
