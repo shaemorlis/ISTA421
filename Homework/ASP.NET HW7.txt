@@ -1,0 +1,32 @@
+Shae Morlis
+ASP.NET Core 3 HW7
+
+
+1.	For the Sports Store application, what requirements does the author identify for implementation? 
+the repository implementation just maps the Products property defined by the IStoreRepository interface onto the Products property defined by the StoreDbContext
+class. The Products property in the context class returns a DbSet<Product> object, which implements the IQueryable<T> interface and makes it easy to implement the repository interface when using Entity Framework Core.
+
+2.	What is the purpose of the Startup class in ASP.NET Core applications?
+Blazor relies on a Razor Page to provide the initial content to the browser, which includes the JavaScript code that connects to the server and renders the Blazor HTML content.
+3. What is the purpose of the CofitureServices method in the Startup class?
+Your Startup class can optionally include a ConfigureServices method for configuring services that are used by your application. The ConfigureServices method is a public method on your Startup class that takes an IServiceCollection instance as a parameter and optionally returns an IServiceProvider .
+4. What is a request pipeline and how does it work?
+The Request Pipeline is the mechanism by which requests are processed beginning with a Request and ending with a Response. The individual components that make up the pipeline are called Middleware.
+5. What is the View Start class and how do we use it?
+n ASP.NET Core MVC Application, the _ViewStart.cshtml file is a special file and the code present in this file is going to be executed before the code in an individual view is executed. the _ViewStart.cshtml files are created within the Views or within the subfolder of the Views folder. To create “_ViewStart.cshtml” file right click on the Views folder and then select “Add – New Item” option from the context menu, this will opens the “New Item” window. From the “New Item” window search for “Razor” and then select the “Razor View Start” and click on the “Add” button as shown in the below image which should create the “_ViewStart.cshtml” within the “Views” folder.
+
+6. What is the feature in ASP.NET Core that generates the database schema for us? What does the file
+created by this feature contain? The migrations feature in EF Core provides a way to incrementally update the database schema to keep it in sync with the application's data model while preserving existing data in the database.
+
+7. When ASP.NET Core sees that a controller instance needs to be created, and that the controller object
+required another object that iplements some interface, how does it determine which interface should b
+e implemented?
+ASP.NET Core MVC controllers request dependencies explicitly via constructors. ASP.NET Core has built-in support for dependency injection (DI). DI makes apps easier to test and maintain.
+
+8. Explain how the paging mechanism works. How does the application calculate the number of pages
+required? How is this data passed to the view?
+Paging is a storage mechanism that allows OS to retrieve processes from the secondary storage into the main memory in the form of pages. In the Paging method, the main memory is divided into small fixed-size blocks of physical memory, which is called frames. The size of a frame should be kept the same as that of a page to have maximum utilization of the main memory and to avoid external fragmentation. Paging is used for faster access to data, and it is a logical concept.
+9. How does the book describe dependency injection? How is dependency injection used?
+dependency injection makes it possible to easily access services anywhere in the application, including middleware components.
+10. How are the routes in MapDefaultControllerRoute() method arranged? Why is this important?
+The MapDefaultControllerRoute() adds endpoints for controller actions and adds the default route which is {controller=Home}/{action=Index}/{id?}. This is the concept of ASP.NET Core Endpoint Routing.

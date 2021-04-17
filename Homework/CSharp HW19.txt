@@ -1,0 +1,34 @@
+## Shae Morlis
+## CSharp HW19
+
+1. What is an enumerable collection?
+ The quick answer is that it is a collection that implements the System.Collections.IEnumerable interface.
+ 
+2. What properties and methods does the IEnumerable interface contain?
+The IEnumerable interface contains a single method called GetEnumerator: IEnumerator GetEnumerator();
+The IEnumerator interface specifies the following property and methods:
+object Current { get; }bool MoveNext();void Reset();
+
+4. What values does the MoveNext() method return? What does it do?
+ You call the MoveNext method to move the pointer down to the next (first) item in the list; 
+ the MoveNext method should return true if there actually is another item and false if there isn’t.
+
+5. What values does the Reset() method return? What does it do?
+You use the Current property to access the item currently pointed to, and 
+you use the Reset method to return the pointer back to before the first item in the list.
+
+6. Are IEnumerable and IEnumerator type safe? Why or why not? If not, how do you implement type
+safety?
+Current property of the IEnumerator interface exhibits non–type-safe behavior in that it returns an object rather than a specific type.
+You must provide a type parameter and implement the IEnumerator<T> interface.
+
+7. Why don't recursive methods retain state when used with data structures like binary trees?
+Recursive algorithms, such as those used when walking a binary tree, do not lend themselves to maintaining state information between method calls in an easily accessible manner. 
+8. How do you define an enumerator?
+Define an enumerator by using an iterator. Implement the enumerator to indicate which items should be returned (using the yield statement) and in which order.
+
+9. What is an iterator?
+An iterator is a block of code that yields an ordered sequence of values. An iterator is not actually a member of an enumerable class; rather, it specifies the sequence that an enumerator should use for returning its values. In other words, an iterator is just a description of the enumeration sequence that the C# compiler can use for creating its own enumerator. 
+
+10. What does yield do?
+The yield keyword indicates the value that should be returned by each iteration. If it helps, you can think of the yield statement as calling a temporary halt to the method, passing back a value to the caller. When the caller needs the next value, the GetEnumerator method continues at the point at which it left off, looping around and then yielding the next value.

@@ -1,0 +1,58 @@
+Shae Morlis
+ASP.NET HW#9
+
+
+1. The text contains the folowing:
+I defined a Cart model class in the previous chapter and demonstrated how it can be stored
+using the session feature, allowing the user to build up a set of products for purchase. The
+responsibility for managing the persistence of the Cart class fell to the Cart Razor Page,
+which has to deal with getting and storing Cart objects as session data.
+The problem with this approach is that I will have to duplicate the code that obtains and
+stores Cart objects in any other Razor Page or controller that uses them.
+In your own words, describe thee \problem" the author identifies and explain why the proposed solution
+is not satisfactory.
+
+Razor as the default view engine, a partial view is simply a Razor view file that is not bound to any layout. By its very nature, a partial view is a reusable view component made of both code and markup.
+
+Each partial view consists of a file with the same extension as any other view supported by the current engine. 
+
+2. What are services, and how do they work.
+Services are commonly used to hide details of how interfaces are implemented from the components that depend on them. But
+services can be used to solve lots of other problems as well and can be used to shape and reshape an application, even when you are
+working with concrete classes such as Cart.
+
+3. (Not in book) The author states, \The static GetCart method is a factory for creating SessionCart
+objects and providing them with an ISession object so they can store themselves." What does he
+mean by calling the GetCart method a factory? Stored in the Data & Object Factory in ASP.NET 
+
+4. What does the AddScoped method do?
+AddScoped(IServiceCollection, Type, Type) Adds a scoped service of the type specified in serviceType with an implementation of the type specified in implementationType to the specified IServiceCollection.
+
+5. How is an HTML form element with a tag handler of asp-page-handler programmed to execute the
+functionality exposed by the form?
+he asp-page-handler attribute can be used to specify the name of a handler method, which allows a azor age to be used
+for more than one operation. don’t like this feature because the result is too close to a standard VC controller and undermines
+the self-contained and modular aspects of azor age development that like.
+
+6. What does the BindNever attribute do? Why is it useful?
+BindNever attribute, which prevents the user from supplying values for these properties in an HTTP request. This
+is a feature of the model binding system, it stops ASP.NET Core using values from the HTTP
+request to populate sensitive or important model properties.
+
+7. What does the tag helper <asp-for> do?
+ This attribute extracts the name of the specified model property into the rendered HTML.
+ 
+8. Using Entity Framework, how do you add a new model to your database?
+add Entity Data Model by right clicking on the project in the solution explorer -> Add -> New Item. This will open the Add New Item popup. In the popup, select ADO.NET Entity Data Model and provide an appropriate name to the EDM ('School' in this case) and click the Add button.
+
+9. What, speciically, does this command do: dotnet ef migrations add Model?
+EF Core will create a directory called Migrations in your project, and add models. 
+
+10. How does Entity Framework understand to load data that is contained in multiple tables? For example,
+suppose you want to load data from both Orders and Order.Details. What LINQ methods accomplish
+this?
+ Join Query in Entity Framework to load the data from two, three or more tables. The LINQ join operator allows us to join multiple tables on one or more columns (multiple columns). By default, they perform the inner join of the tables.
+ 
+11. Why do we validate data on the client side? Why do we validate data on the server side? What are
+the advantages and disadvantages of cliet side validation and server side validation?
+By validating on the client-side, you have a smoother user experience and by validating on the server-side you ensure any client-side restrictions that were by-passed are validated again before being stored or reflected back to the user.

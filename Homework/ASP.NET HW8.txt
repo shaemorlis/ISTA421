@@ -1,0 +1,32 @@
+
+
+1. For chapter 8 of the ASP.NET Core 3 book, what are the three requirements as the quthor describes
+them?
+
+• Enhance the Index action method in the HomeController class so that it can filter the Product objects in the
+repository
+• Revisit and enhance the URL scheme
+• Create a category list that will go into the sidebar of the site, highlighting the current category and linking to
+others
+
+2. When adding new routes in Startup.cs, in what order should you add the new routes? Why?
+t is important to add the new routes in Listing 8-3 in the order they are shown. outes are applied in the order in which
+they are defined, and you will get some odd effects if you change the order.
+
+3. Does ASP.NET Core 3 handle outgoing HTTP requests as well as incoming requests? If so, what is one
+reason that this is important?
+The ASP.NET Core routing system handles incoming requests from clients, but it also generates outgoing URLs that conform
+to the URL scheme and that can be embedded in web pages. By using the routing system both to handle incoming requests and to
+generate outgoing URLs, I can ensure that all the URLs in the application are consistent.
+4. What is a view component? Why do you use view components?
+5. When you use a view component in a view, how is the view component referenced, and what nameing
+convention do you use?
+6. When ASP.NET Core 3 needs to create a instance of a component, how does it know what value to give
+the new instance?
+7. How do ASP.NET Core 3 components get information about a user's current HTTP request? Why
+would it be important for the component to get this information?
+8. What does the PathAndQuery extension method do with an incoming HTTP request? What does the
+method do with the return value? What is the return value?
+9. What is session state?
+10. What three types does a session state store? Suppose you want to store data that has a type that
+session state does not store, is it possible to do so? If so, how do you do it?

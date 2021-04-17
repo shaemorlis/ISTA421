@@ -1,0 +1,75 @@
+Name: Shae Morlis
+Date: April 12th, 2021
+File: C# HW22
+
+
+1. Explain the difference between the concepts of associativity and precedence.
+
+Associativity is the rule that defines how an operator evauluates either left from right or right form left. 
+
+Precedence is the rule of the sp[ecific order operands are performed in. Think PEMDAS. multiplication will come before addition. A + B * C is the same has A + (B * C). 
+
+2. Explain the difference between the concepts of binary and unary operators.
+
+Unary operators are limited to just ONE operand where as a binary operator will have two operands. incrementing is unary Value++ and multiplication is binary A * B. 
+
+3. List four constraints imposed by C# with respect to operator overloading.
+
+No inventing new operator symbols. 
+Can't modify the meaning of pre-defined operators. 
+Can't change the necessary operand requirments of a certain operand. Binary must have two operand and unary must have one. 
+No changing the precedence or associativity of an operator.
+
+
+4. What is the syntax for overloading operators? Discuss access, scope, return value types, and parameter
+types and multiplicity.
+
+struct Hour
+{
+public Hour(int initialValue) => this.value = initialValue;
+public static Hour operator +(Hour lhs, Hour rhs) => new Hour(lhs.value + rhs.value);
+...
+private int value;
+}
+
+method-like syntax wiht a return type and parameters. THe name of the method is the KEYWORD operator combined with the symbol of the choosen operator you are declaring. Must be public (all) All operators must be static. the operators will never be plymorphic and restricted form using the virtual, abstract, override and sealed modifiers. 
+
+At least one of the parameters must be of the containing type. In the example of Hour, one parameter must be of hour type. 
+
+5. What are symmetric overloaded binary operators and how do they differ from non-symmetric overloaded binary operators?
+
+symmetric overload binary operators allow you to utilize the pre-defined functionality on different types. Obj Hour and an Int, for example. 
+
+Non-symmetric would be of same type as in a binary operation int * int.
+
+
+6. Can you overload compound assignment operators? If so, please state how you do so. If not, explain
+why not.
+
+No, the assignment cannot be overloaded because it would break the defined rules as mentioned earlier of changing the buiilt-in data type. you can overload specific pieces within an operation to perform the task needed but the actual assignment you cannot as there is no possibility of overload the assignment of a made object into the pre built int type for example. 
+
+
+7. What is the difference between overloading increment and decrement operators for value types and
+reference types?
+
+For increment and decrement operations in reference types, the operation will create new objects after opertion and leave the original value (stored location in memory) unchanged. This leads to memory collection and "arbage collection". 
+
+
+
+8. Why do we overload some operators in pairs?
+
+Because the C# compilier enforces a neither or both rule when using comparision operators and requires the two being compared to be of same type. You overload in pairs so that you can utilize this functionalitysmoothly as both values are now defined appropriately. 
+
+
+9. What is the difference between widening conversion and narrowing conversion? 
+
+Widening is used as a term that expresses the value of the conversion will retain AT MINIMUM the ooriginal value and potentially more in detail. Ex: int to double. int 42 == double 42.00 the original value of 42 remains but now with more precision or detail. 
+
+Narrowing will be the opposite of the above example. If I had double 42.01 and converted to INT, I will recieve INT 42. Notice the .01 is not returned. Hence the narrowing.
+
+
+10. What is the difference between explicit conversion and implicit conversion?
+
+Explicit is when the operation runs the risk of losing information or where the input could run into an error requiring an exception(s) to be put in place. 
+
+Implicit is when the conversion (or operation) is safe in the sense you will not need to throw an exception due to the conversion being reliable and don't risk losing information. Like the int to double conversion where you retain all original information. 

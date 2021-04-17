@@ -1,0 +1,64 @@
+Name: Shae Morlis
+Date: Mar 29, 2021
+File: C#HW20
+
+
+
+1. What is a delegate? Explain delegates in terms of pointers and reference types.
+A delegate can be a type; A reference to a method; an object that refers to a method. 
+
+
+2. How do you declare a delegate? Include a discussion of types, return values, names, and parameters.
+Use the delegate keyword followed by the return type (void) then the method() with or without parameters. . 
+
+
+3. How do you create instances of delegates and assign values to the instance? What are the values?
+use the += compund assignment operator. field type (private) methodname() methodinstance
+Controller()
+{
+delegatename += specific.Action;
+}
+or
+actioname = new actiondelegate(specific.Action);
+
+
+4. How do you invoke a method that has been added to a delegate?
+public void ShutDown()
+{
+this.stopMachinery();
+...
+}
+
+5. What is an event? Why do we have events?
+Events are a feature gifted from .NET Framework that define and trap specific actions and arrange the delegates to be called. 
+
+
+6. How do you declare events?
+You use the event keyword and the choosen delgate(s) followed by the name given.
+event delegateTypeName eventName
+
+7. How do delegates recognize event subscriptions? How do you unsubscribe an event from a delegate?
+Delegate recognize subscriptions by the use of the += operator (compound assignment operator) class TemperatureMonitor
+{
+public delegate void StopMachineryDelegate();
+public event StopMachineryDelegate MachineOverheating;
+...
+} ...
+TemperatureMonitor tempMonitor = new TemperatureMonitor();
+...
+tempMonitor.MachineOverheating += (() => { folder.StopFolding(0); });
+tempMonitor.MachineOverheating += welder.FinishWelding;
+tempMonitor.MachineOverheating += painter.PaintOff;
+------------------------------------------------
+unsubscribe: 
+the use of the -= operatore 
+
+
+8. How do you raise an event? How do you declare code that raises an event? 
+By calling it like a method; raising a method all the delegates attached are called. 
+With the Notify() method
+
+
+9. Explain with specificity what happens when an event fires and that event has been attached to a
+delegate. 
+all the methods subscribed to the event execute. 
